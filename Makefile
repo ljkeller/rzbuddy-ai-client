@@ -13,7 +13,7 @@ BSP_SDK_FLAG = \
 	-lmount -lresolv -lexpat -lpangoft2-1.0 -lblkid \
 
 # List all the files
-SRC_AD_CAM = examples/rzbuddy.cpp \
+SRC_AD_CAM = examples/rzbuddy_main.cpp \
         src/ascii.cpp \
         src/ascii.h \
         src/box.cpp \
@@ -25,8 +25,8 @@ SRC_AD_CAM = examples/rzbuddy.cpp \
         src/camera.h \
         src/wayland.cpp \
         src/wayland.h \
-        src/sample_app_yolov3_cam.cpp \
-        src/sample_app_yolov3_cam.h \
+        src/rzbuddy.cpp \
+        src/rzbuddy.h \
 
 INC_DIR_AD_CAM = -I src/
 CFLAGS_AD_CAM = ${INC_DIR_AD_CAM}

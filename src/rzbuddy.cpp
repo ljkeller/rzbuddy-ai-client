@@ -17,7 +17,7 @@
 * Copyright (C) 2022 Renesas Electronics Corporation. All rights reserved.
 ***********************************************************************************************************************/
 /***********************************************************************************************************************
-* File Name    : sample_app_tinyyolov2_cam.cpp
+* File Name    : rzbuddy.cpp
 * Version      : 7.20
 * Description  : RZ/V2L DRP-AI Sample Application for Darknet-PyTorch YOLOv3 MIPI Camera version
 ***********************************************************************************************************************/
@@ -1194,7 +1194,7 @@ int32_t get_animal_detect_cam(void)
     /* Filter the bit higher than 32 bit */
     udmabuf_address &=0xFFFFFFFF;
 
-    printf("RZ/V2L DRP-AI Sample Application\n");
+    printf("RZBuddy Sample Application\n");
     printf("Model : Darknet YOLOv3 | %s\n", drpai_prefix.c_str());
     printf("Input : USB Camera\n");
 
@@ -1223,6 +1223,7 @@ int32_t get_animal_detect_cam(void)
         ret_main = ret;
         goto end_close_drpai;
     }
+    printf("DRP-AI Data Loaded\n");
 
     /* Create Camera Instance */
     capture = new Camera();
